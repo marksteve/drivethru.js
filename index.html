@@ -5,7 +5,7 @@
   <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/normalize/3.0.0/normalize.min.css">
   <link rel="stylesheet" href="lib/drivethru.css">
   <style>
-    #blog {
+    #page {
       padding: 2rem;
       width: 40rem;
       margin: 0 auto;
@@ -14,18 +14,23 @@
 </head>
 <body>
 
-<div id="blog">
-  <h1>Blog</h1>
+<div id="page">
+  <h1>drivethru.js</h1>
+  <p>Backend-less commenting using Google Drive</p>
+  <h2>Setup</h2>
+  <p>WIP</p>
+  <h2>Demo</h2>
+  <h3>Blog</h3>
   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
   tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
   quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
   consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
   cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
   proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-  <h2>
+  <h3>
     Comments
     <span id="comments-count"></span>
-  </h2>
+  </h3>
   <div id="comments"></div>
 </div>
 
@@ -47,7 +52,7 @@
         }
       })
       .init();
-  }  
+  }
 </script>
 <script src="https://apis.google.com/js/client.js?onload=init"></script>
 
