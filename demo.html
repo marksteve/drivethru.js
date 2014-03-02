@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>drivethru.js</title>
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/normalize/3.0.0/normalize.min.css">
+  <link rel="stylesheet" href="lib/drivethru.css">
+  <style>
+    #blog {
+      padding: 2rem;
+      width: 40rem;
+      margin: 0 auto;
+    }
+  </style>
+</head>
+<body>
+
+<div id="blog">
+  <h1>Blog</h1>
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+  tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+  quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+  consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+  cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+  proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+  <h2>
+    Comments
+    <span id="comments-count"></span>
+  </h2>
+  <div id="comments"></div>
+</div>
+
+<script src="lib/react.js"></script>
+<script src="lib/JSXTransformer.js"></script>
+<script type="text/jsx" src="lib/drivethru.js"></script>
+<script>
+  function init() {
+    drivethru
+      .configure({
+        el: document.getElementById('comments'),
+        clientId: '629861755244-t4q9mbhpm3jie7t5os5mduai5u3ladae.apps.googleusercontent.com',
+        apiKey: 'AIzaSyBz4aIeIN7lP4_8rbt33ocHhm0rmQI-81Q',
+        rootId: '0BwrPbVd2f3w8NEFYRGxrbVFKMG8',
+        onLoad: function(comments) {
+          document
+            .getElementById('comments-count')
+            .innerText = '(' + comments.length + ')';
+        }
+      })
+      .init();
+  }  
+</script>
+<script src="https://apis.google.com/js/client.js?onload=init"></script>
+
+</body>
+</html>

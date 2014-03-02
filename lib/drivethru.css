@@ -1,0 +1,28 @@
+.dt-comments {
+  padding: 1rem 0;
+}
+
+.dt-comments ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.dt-comments ul > li {
+  padding: 1rem;
+  border: 1px #eee solid;
+  border-radius: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.dt-comment-author img {
+  height: 2rem;
+  border-radius: 50%;
+  border: 1px #eee solid;
+  margin-right: 0.5rem;
+  vertical-align: middle;
+}
+
+.dt-comment-author-name {
+  font-weight: bold;
+}
