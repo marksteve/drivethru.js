@@ -1,0 +1,8 @@
+{
+  "name": "drivethru",
+  "dependencies": {
+    "react-tools": "*",
+    "uglify-js": "*",
+    "clean-css": "*"
+  }
+}
